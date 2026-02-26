@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Rakesh Reddy | Software Developer Portfolio">
+<title>Rakesh Reddy | Software Developer</title>
+
+<style>
+:root {
+  --primary: #2563eb;
+  --dark: #0f172a;
+  --light: #f8fafc;
+  --gray: #64748b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+header {
+  background: white;
+  padding: 15px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: var(--dark);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+/* HERO */
+.hero {
+  padding: 100px 10%;
+  text-align: center;
+  background: linear-gradient(to right, #e0e7ff, #f8fafc);
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: var(--gray);
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1e40af;
+}
+
+/* SECTIONS */
+section {
+  padding: 70px 10%;
+}
+
+section h2 {
+  margin-bottom: 30px;
+  border-left: 5px solid var(--primary);
+  padding-left: 10px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card p {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--dark);
+  color: white;
+  margin-top: 50px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    margin-top: 10px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h3>Rakesh Reddy</h3>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Software Developer | AI & ML</h1>
+  <p>B.Tech Computer Science student specializing in Artificial Intelligence and Machine Learning. Passionate about building scalable applications and intelligent systems.</p>
+  <a href="#projects" class="btn">View My Work</a>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Motivated Computer Science student with strong foundations in Data Structures,
+    Machine Learning, and Web Development. Seeking entry-level Software Developer
+    opportunities in reputed MNCs.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="grid">
+    <div class="card">
+      <h4>Programming</h4>
+      <p>Python, Java, C++, SQL</p>
+    </div>
+    <div class="card">
+      <h4>Web Development</h4>
+      <p>HTML5, CSS3, Responsive Design</p>
+    </div>
+    <div class="card">
+      <h4>AI & ML</h4>
+      <p>Scikit-learn, Pandas, NumPy</p>
+    </div>
+    <div class="card">
+      <h4>Tools</h4>
+      <p>Git, GitHub, VS Code</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h4>Air Quality Forecasting System</h4>
+      <p>ML model predicting pollution levels with improved accuracy.</p>
+      <a href="https://github.com/yourusername" target="_blank" class="btn">GitHub</a>
+    </div>
+    <div class="card">
+      <h4>Gym Membership App</h4>
+      <p>Django-based web app for managing subscriptions and members.</p>
+      <a href="https://github.com/yourusername" target="_blank" class="btn">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: yourmail@email.com</p>
+  <p>
+    <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+  </p>
+</section>
+
+<footer>
+  © 2026 Rakesh Reddy | Software Developer
+</footer>
+
+</body>
+</html>
